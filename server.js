@@ -18,6 +18,12 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 
+app.get('https://www.instagram.com/p/BLSuNhaBqnK6krx1EfImbd3YSgj6fInAoGGuTc0/?taken-by=monica_acha2103', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'https://www.instagram.com/p/BLSuNhaBqnK6krx1EfImbd3YSgj6fInAoGGuTc0/?taken-by=monica_acha2103'));
+});
+
+
+
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
